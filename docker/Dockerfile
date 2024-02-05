@@ -109,7 +109,7 @@ ONBUILD RUN \
             mkdir -p /monasca-common && \
             git -C /monasca-common init && \
             git -C /monasca-common remote add origin "$COMMON_REPO" && \
-            echo "Cloning monasca-common in version: $COMMON_VERSION" && \
+            echo "Cloning monasca-common in version 99: $COMMON_VERSION" && \
             git -C /monasca-common fetch origin "$COMMON_VERSION" && \
             git -C /monasca-common reset --hard FETCH_HEAD && \
             # When creating image from master, stable branch or commit use
